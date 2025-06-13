@@ -65,7 +65,7 @@ export default function Profile() {
     try {
       dispatch(updateUserStart());
       const res = await fetch(
-        `https://estate-hub-9hrv.onrender.com/api/user/update/${currentUser._id}`,
+        `https://estate-hub-4ypa.onrender.com/api/user/update/${currentUser._id}`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -88,7 +88,7 @@ export default function Profile() {
     try {
       dispatch(deleteUserStart());
       const res = await fetch(
-        `https://estate-hub-9hrv.onrender.com/api/user/delete/${currentUser._id}`,
+        `https://estate-hub-4ypa.onrender.com/api/user/delete/${currentUser._id}`,
         { method: 'DELETE' }
       );
       const data = await res.json();
@@ -106,7 +106,7 @@ export default function Profile() {
     try {
       dispatch(signOutUserStart());
       const res = await fetch(
-        'https://estate-hub-9hrv.onrender.com/api/auth/signout'
+        'https://estate-hub-4ypa.onrender.com/api/auth/signout'
       );
       const data = await res.json();
       if (data.success === false) {
@@ -123,7 +123,7 @@ export default function Profile() {
     try {
       setShowListingsError(false);
       const res = await fetch(
-        `https://estate-hub-9hrv.onrender.com/api/user/listings/${currentUser._id}`
+        `https://estate-hub-4ypa.onrender.com/api/user/listings/${currentUser._id}`
       );
       const data = await res.json();
       if (data.success === false) {
@@ -139,7 +139,7 @@ export default function Profile() {
   const handleListingDelete = async (listingId) => {
     try {
       const res = await fetch(
-        `https://estate-hub-9hrv.onrender.com/api/listing/delete/${listingId}`,
+        `https://estate-hub-4ypa.onrender.com/api/listing/delete/${listingId}`,
         { method: 'DELETE' }
       );
       const data = await res.json();

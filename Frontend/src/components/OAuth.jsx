@@ -15,7 +15,7 @@ export default function OAuth() {
 
       const result = await signInWithPopup(auth, provider);
 
-      const response = await fetch('https://estate-hub-9hrv.onrender.com/api/auth/google', {
+      const response = await fetch('https://estate-hub-4ypa.onrender.com/api/auth/google', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

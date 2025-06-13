@@ -19,7 +19,7 @@ export default function SignUp() {
     e.preventDefault();
     try {
       setLoading(true);
-      const res = await fetch('https://estate-hub-9hrv.onrender.com/api/auth/signup', {
+      const res = await fetch('https://estate-hub-4ypa.onrender.com/api/auth/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

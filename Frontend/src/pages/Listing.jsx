@@ -32,7 +32,7 @@ export default function Listing() {
       try {
         setLoading(true);
         const res = await fetch(
-          `https://estate-hub-9hrv.onrender.com/api/listing/get/${params.listingId}`
+          `https://estate-hub-4ypa.onrender.com/api/listing/get/${params.listingId}`
         );
         const data = await res.json();
         if (data.success === false) {

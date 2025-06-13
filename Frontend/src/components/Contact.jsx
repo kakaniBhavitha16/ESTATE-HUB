@@ -13,7 +13,7 @@ export default function Contact({ listing }) {
     const fetchLandlord = async () => {
       try {
         const res = await fetch(
-          `https://estate-hub-9hrv.onrender.com/api/user/${listing.userRef}`
+          `https://estate-hub-4ypa.onrender.com/api/user/${listing.userRef}`
         );
         const data = await res.json();
         setLandlord(data);

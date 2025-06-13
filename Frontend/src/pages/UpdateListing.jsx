@@ -36,7 +36,7 @@ export default function CreateListing() {
   useEffect(() => {
     const fetchListing = async () => {
       const listingId = params.listingId;
-      const res = await fetch(`https://estate-hub-9hrv.onrender.com/api/listing/get/${listingId}`);
+      const res = await fetch(`https://estate-hub-4ypa.onrender.com/api/listing/get/${listingId}`);
       const data = await res.json();
       if (data.success === false) {
         console.log(data.message);
@@ -147,7 +147,7 @@ export default function CreateListing() {
       setLoading(true);
       setError(false);
       const res = await fetch(
-        `https://estate-hub-9hrv.onrender.com/api/listing/update/${params.listingId}`,
+        `https://estate-hub-4ypa.onrender.com/api/listing/update/${params.listingId}`,
         {
           method: 'POST',
           headers: {

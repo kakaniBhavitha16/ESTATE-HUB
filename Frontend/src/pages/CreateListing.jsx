@@ -133,7 +133,7 @@ export default function CreateListing() {
       setLoading(true);
       setError(false);
       const res = await fetch(
-        'https://estate-hub-9hrv.onrender.com/api/listing/create',
+        'https://estate-hub-4ypa.onrender.com/api/listing/create',
         {
           method: 'POST',
           headers: {

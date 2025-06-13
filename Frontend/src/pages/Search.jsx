@@ -53,7 +53,7 @@ export default function Search() {
       setLoading(true);
       setShowMore(false);
       const searchQuery = urlParams.toString();
-      const res = await fetch(`https://estate-hub-9hrv.onrender.com/api/listing/get?${searchQuery}`);
+      const res = await fetch(`https://estate-hub-4ypa.onrender.com/api/listing/get?${searchQuery}`);
       const data = await res.json();
       if (data.length > 8) {
         setShowMore(true);
@@ -109,7 +109,7 @@ export default function Search() {
     const startIndex = numberOfListings;
     const urlParams = new URLSearchParams(location.search);
     urlParams.set('startIndex', startIndex);
-    const res = await fetch(`https://estate-hub-9hrv.onrender.com/api/listing/get?${urlParams.toString()}`); // ✅ FIXED URL
+    const res = await fetch(`https://estate-hub-4ypa.onrender.com/api/listing/get?${urlParams.toString()}`); // ✅ FIXED URL
     const data = await res.json();
     if (data.length < 9) {
       setShowMore(false);
